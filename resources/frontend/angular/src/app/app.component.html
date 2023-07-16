@@ -1,4 +1,49 @@
-<div>
-  
-</div>
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-xl" dir="rtl">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center">
+      <span class="mx-2">
+        <svg width="32px" height="32px" viewBox="-3.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="icomoon-ignore">
+          </g>
+          <path d="M6.294 14.164h12.588v1.049h-12.588v-1.049z" fill="#000000">
+          
+          </path>
+          <path d="M6.294 18.36h12.588v1.049h-12.588v-1.049z" fill="#000000">
+          
+          </path>
+          <path d="M6.294 22.557h8.392v1.049h-8.392v-1.049z" fill="#000000">
+          
+          </path>
+          <path d="M15.688 3.674c-0.25-1.488-1.541-2.623-3.1-2.623s-2.85 1.135-3.1 2.623h-9.489v27.275h25.176v-27.275h-9.488zM10.49 6.082v-1.884c0-1.157 0.941-2.098 2.098-2.098s2.098 0.941 2.098 2.098v1.884l0.531 0.302c1.030 0.586 1.82 1.477 2.273 2.535h-9.803c0.453-1.058 1.243-1.949 2.273-2.535l0.53-0.302zM24.128 29.9h-23.078v-25.177h8.392v0.749c-1.638 0.932-2.824 2.566-3.147 4.496h12.588c-0.322-1.93-1.509-3.563-3.147-4.496v-0.749h8.392v25.177z" fill="#000000">
+          
+          </path>
+        </svg>
+      </span>
+ الخدمات الداخلية للمجلس الاعلى للقضاء    </a>
+    <button (click)="showNavbar = !showNavbar" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="w-full md:block md:w-auto" [class]='{"hidden" : !showNavbar} '  id="navbar-default" >
+      <ul dir="rtl" class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 mx-2 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">الصفحة الرئيسية</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 mx-2 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">الارشيف</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 mx-2 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"></a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 mx-2 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <router-outlet></router-outlet>

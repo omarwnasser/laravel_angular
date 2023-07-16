@@ -8,12 +8,11 @@ import { UsersServices } from './services/Users.services';
 })
 export class AppComponent implements OnInit{
 
-  userServices = inject(UsersServices)
-
-  ngOnInit(): void {
-    this.userServices.getUsersList().subscribe(e=>{
-      console.log(e);
-    })
-  }
   title = 'angular';
+  ngOnInit(): void {
+  
+  }
+
+  showNavbar = false;
+
 }
