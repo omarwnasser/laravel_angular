@@ -19,7 +19,7 @@ import {UsersServices} from './services/Users.services';
   providers: [
     UsersServices,
     { provide: HTTP_INTERCEPTORS, useClass: ApiInterceptor, multi: true },
-    {provide: "BASE_API_URL" , useValue: 'http://localhost:8000'},
+    {provide: "BASE_API_URL" , useValue: process.env['NODE_ENV'] == 'production' ? window.location.host :'http://localhost:8000'},
   ],
   bootstrap: [AppComponent]
 })
