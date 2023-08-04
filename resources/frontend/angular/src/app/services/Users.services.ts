@@ -6,7 +6,7 @@ export class UsersServices {
     constructor(private httpClient: HttpClient) { }
 
     getUsersList = ()=>{
-       return this.httpClient.get('users/users')
+       return this.httpClient.get('user')
     }
     
 }
